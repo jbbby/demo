@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage('checkout'){
       steps {
-        sh "echo starting..."
+        sh "echo starting"
+      }
+    }
+    stage('build'){
+      steps {
+        sh "echo build"
       }
     }
   }

@@ -1,14 +1,19 @@
 pipeline {
   agent any
   stages {
-    stage('checkout'){
+    stage('Checkout'){
       steps {
         sh "echo starting"
       }
     }
-    stage('build'){
+    stage('Build'){
       steps {
         sh "echo build"
+      }
+    }
+    stage('ECR'){
+      steps {
+        sh "echo ecr push"
       }
     }
   }

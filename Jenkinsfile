@@ -16,5 +16,10 @@ pipeline {
         sh "echo ecr push"
       }
     }
+    stage('EKS'){
+      steps {
+        sh "echo eks push"
+      }
+    }
   }
 }

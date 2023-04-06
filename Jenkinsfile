@@ -11,11 +11,6 @@ pipeline {
         sh "echo build"
       }
     }
-    stage('Sonar'){
-      steps {
-        sh "echo Sonar"
-      }
-    }
     stage('ECR'){
       steps {
         sh "echo ecr push"
